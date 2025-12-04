@@ -1,3 +1,6 @@
+## Accounting AI 
+# To help first-time tax filers (like me) understand what is even going on and what we should do!
+
 Setup Instructions:
 
 Install dependencies:
