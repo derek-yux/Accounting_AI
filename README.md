@@ -1,6 +1,8 @@
 # Accounting AI 
 ## To help first-time tax filers (like me) understand what is even going on and what we should do!
 
+<img width="1131" height="866" alt="Screenshot 2025-12-03 at 10 49 13 PM" src="https://github.com/user-attachments/assets/767a857d-ec59-45ef-b2ba-ec729f295f06" />
+
 Setup Instructions:
 
 Install dependencies:
