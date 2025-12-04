@@ -1,0 +1,29 @@
+{
+  "AWSEBDockerrunVersion": 2,
+  "containerDefinitions": [
+    {
+      "name": "frontend",
+      "image": "985602287859.dkr.ecr.ca-central-1.amazonaws.com/frontend:latest",
+      "essential": true,
+      "memory": 256,
+      "portMappings": [
+        { "hostPort": 80, "containerPort": 80 }
+      ]
+    },
+    {
+      "name": "backend",
+      "image": "985602287859.dkr.ecr.ca-central-1.amazonaws.com/backend:latest",
+      "essential": true,
+      "memory": 256,
+      "portMappings": [
+        { "hostPort": 3001, "containerPort": 3001 }
+      ],
+      "environment": [
+        {
+          "name": "OPENAI_API_KEY",
+          "value": "WILL_BE_OVERRIDDEN_IN_EB"
+        }
+      ]
+    }
+  ]
+}

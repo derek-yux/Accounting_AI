@@ -1,0 +1,20 @@
+# Dockerfile.frontend
+FROM node:18-alpine
+
+WORKDIR /app
+
+# Copy package files
+COPY package*.json ./
+
+# Install all dependencies (including dev dependencies for Vite)
+RUN npm install
+
+# Copy source files
+COPY src ./src
+COPY index.html .
+COPY vite.config.js .
+
+EXPOSE 5173
+
+# Run Vite in development mode with host flag to allow external access
+CMD ["npx", "vite", "--host", "0.0.0.0"]

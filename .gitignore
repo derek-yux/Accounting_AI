@@ -1,0 +1,7 @@
+.elasticbeanstalk/*
+!.elasticbeanstalk/*.cfg.yml
+!.elasticbeanstalk/*.global.yml
+
+node_modules/
+npm-debug.log
+.env
