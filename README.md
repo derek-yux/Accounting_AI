@@ -34,5 +34,8 @@ Run the server:
 ```
 npm run dev
 ```
-Tech Stack:
+
+Note that this is the most basic implementation to get it running on your localhost, but of course this code is meant for Docker (just install Docker and run "docker compose up" in the terminal, or if you have AWS Cloud, it can get hosted on there too! I ran out of credits for now though haha)
+
+## Tech Stack:
 Docker, Python, React, JavaScript, Vite, AWS Elastic Beanstalk
